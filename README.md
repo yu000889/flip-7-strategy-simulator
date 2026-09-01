@@ -16,5 +16,6 @@ Python (OOP), Pandas, Matplotlib, SciPy
 Win rates
 - Flip 3 strategy: Increased from 45.6% to 47.7% (+2.1 percentage points, p ≈ 0.370)
 - 2nd chance strategy: Increased from 45.6% to 52.5% (+6.9 percentage points, p ≈ 0.00235)
-- EV strategy: Increased from 45.6% to 59.2% (+13.6 percentage points, p ≈ 1.50 * 10^-9)
-- Combined strategy: Increased from 45.6% to 66.1% (+20.5 percentage points, p ≈ 4.07 * 10^-20)
+- EV strategy: Increased from 45.6% to 59.2% (+13.6 percentage points, p ≈ 1.50e-9)
+- Combined strategy: Increased from 45.6% to 66.1% (+20.5 percentage points, p ≈ 4.07e-20)
+Overall, the EV-based strategy produced a substantial improvement in win rate, while combining all strategy mechanics produced the largest improvement.
