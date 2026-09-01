@@ -1,9 +1,22 @@
 # Flip 7 Strategy Simulator
 ## Overview
-Python simulation comparing player strategies for the card game Flip 7, 
-using statistical testing to evaluate performance against a baseline.
+Flip 7 is a push-your-luck card game where players choose whether to
+continue drawing cards or stop and keep their current score. This project
+uses Python simulation to investigate how different decision-making
+strategies affect player scores and win rates.
+
 ## Tools
 Python (OOP), Pandas, Matplotlib, SciPy
+
+## Strategies
+The simulation compares a baseline strategy with four strategies that
+individually or collectively introduce different decision-making mechanics.
+- **Baseline:** Uses the standard decision-making strategy without any of the experimental mechanics.
+- **Flip 3:** Uses information from the Flip 3 mechanic to make more informed decisions about whether to continue drawing.
+- **2nd Chance:** Uses the 2nd Chance mechanic to reduce the risk of losing a round when a duplicate card is drawn.
+- **EV:** Uses expected value calculations to determine whether continuing to draw is likely to improve the player's expected score.
+- **Combined:** Combines the Flip 3, 2nd Chance, and EV mechanics into a single strategy.
+
 ## Methodology
 - Built 5 simulation variants isolating different strategy mechanics 
   (baseline, flip 3, 2nd chance, EV, all combined)
@@ -12,6 +25,7 @@ Python (OOP), Pandas, Matplotlib, SciPy
 - Visualized win rates and score margins with Matplotlib
 - Tested statistical significance of each strategy vs. baseline using 
   SciPy chi-square tests
+
 ## Key Findings
 Win rates
 - Flip 3 strategy: Increased from 45.6% to 47.7% (+2.1 percentage points, p ≈ 0.370)
